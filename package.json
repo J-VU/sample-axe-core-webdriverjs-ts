@@ -1,0 +1,21 @@
+{
+  "name": "axe-core-webdriverjs-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "J-VU",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "start": "yarn build && node ./dist/index.js",
+    "format": "prettier --write 'src/**/*'"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@axe-core/webdriverjs": "^4.1.1",
+    "selenium-webdriver": "^4.0.0-alpha.8"
+  }
+}
